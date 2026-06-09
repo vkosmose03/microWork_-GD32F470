@@ -47,7 +47,8 @@ add_library(acmeter_core STATIC
     src/calc/dfdt.c
     src/calc/harmonic.c
     src/calc/signal_calc.c
-    src/measure/measure.c)
+    src/measure/measure.c
+    src/config/config.c)
 target_include_directories(acmeter_core PUBLIC src)
 target_link_libraries(acmeter_core PUBLIC acmeter_warnings)
 # Single-precision math (sqrtf, sinf, ...) keeps the FPU busy and the CPU free.

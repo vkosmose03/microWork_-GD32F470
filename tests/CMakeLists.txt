@@ -23,3 +23,5 @@ add_unit_test(test_freq)
 add_unit_test(test_dfdt)
 add_unit_test(test_harmonic)
 add_unit_test(test_measure)
+# The config test supplies a RAM-backed fake of the hal_nvm interface.
+add_unit_test(test_config fake_hal_nvm.c)
