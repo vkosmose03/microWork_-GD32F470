@@ -10,8 +10,8 @@ include(FetchContent)
 FetchContent_Declare(
     gd32f4xx
     GIT_REPOSITORY https://github.com/cjacker/gd32f4xx_firmware_library_gcc_makefile.git
-    GIT_TAG 3b5d2f265fd40cd39993e4b12fdaeee6bd7aeb65
-    GIT_SHALLOW TRUE)
+    # Pinned commit; not shallow, so the exact SHA is always checkout-able.
+    GIT_TAG 3b5d2f265fd40cd39993e4b12fdaeee6bd7aeb65)
 FetchContent_MakeAvailable(gd32f4xx)
 
 set(GD32_FW "${gd32f4xx_SOURCE_DIR}/Firmware")
