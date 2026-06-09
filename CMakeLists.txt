@@ -72,8 +72,8 @@ if(CMAKE_CROSSCOMPILING)
         -Wl,-Map=$<TARGET_FILE_DIR:firmware>/firmware.map,--cref
         -Wl,--gc-sections
         -Wl,--print-memory-usage
-        --specs=nano.specs
-        --specs=nosys.specs)
+        -Wl,--no-warn-rwx-segments
+        --specs=nano.specs)
 
     # Produce .bin/.hex and print the image size after every build.
     add_custom_command(TARGET firmware POST_BUILD
