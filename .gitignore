@@ -1,0 +1,38 @@
+# Build directories
+/build*/
+/cmake-build*/
+/_deps/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+*.cmake.stamp
+
+# Compiled / firmware artifacts
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+*.d
+*.a
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+coverage.xml
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+compile_commands.json

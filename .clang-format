@@ -1,0 +1,19 @@
+# Code style for the GD32F470 AC-meter firmware.
+# Based on LLVM with a 4-space indent and a 100-column limit, which is a
+# comfortable fit for embedded C with descriptive register/peripheral names.
+---
+Language: Cpp
+BasedOnStyle: LLVM
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+PointerAlignment: Right
+AlignConsecutiveMacros: AcrossEmptyLines
+AllowShortFunctionsOnASingleLine: InlineOnly
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+SpaceAfterCStyleCast: true
+SortIncludes: CaseInsensitive
+IncludeBlocks: Preserve
+KeepEmptyLinesAtTheStartOfBlocks: false
