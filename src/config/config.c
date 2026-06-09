@@ -92,8 +92,7 @@ int config_load(config_params_t *p) {
     }
 
     if (rec.magic != CONFIG_MAGIC || rec.version != CONFIG_VERSION ||
-        rec.size != (uint16_t) sizeof(config_params_t) ||
-        rec.crc32 != config_record_crc(&rec)) {
+        rec.size != (uint16_t) sizeof(config_params_t) || rec.crc32 != config_record_crc(&rec)) {
         config_set_defaults(p);
         return -1;
     }

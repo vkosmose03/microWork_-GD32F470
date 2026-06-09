@@ -14,9 +14,9 @@
 
 #include "gd32f4xx.h"
 
-#define ADC_DMA_PERIPH DMA1
+#define ADC_DMA_PERIPH  DMA1
 #define ADC_DMA_CHANNEL DMA_CH0
-#define ADC_MAX_BLOCK 4096u
+#define ADC_MAX_BLOCK   4096u
 
 /* Circular DMA buffer holds two blocks (double buffering). */
 static adc_sample_t s_dma_buffer[2u * ADC_MAX_BLOCK];

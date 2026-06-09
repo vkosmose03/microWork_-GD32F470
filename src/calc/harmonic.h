@@ -20,9 +20,9 @@ extern "C" {
 #endif
 
 typedef struct {
-    float amplitude;  /**< Peak amplitude of the fundamental.        */
-    float rms;        /**< RMS of the fundamental (= amplitude/√2).   */
-    int valid;        /**< Non-zero if the estimate is meaningful.    */
+    float amplitude; /**< Peak amplitude of the fundamental.        */
+    float rms;       /**< RMS of the fundamental (= amplitude/√2).   */
+    int valid;       /**< Non-zero if the estimate is meaningful.    */
 } harmonic_result_t;
 
 /**

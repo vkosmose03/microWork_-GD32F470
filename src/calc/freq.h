@@ -19,9 +19,9 @@ extern "C" {
 #endif
 
 typedef struct {
-    float frequency_hz;     /**< Estimated fundamental frequency, 0 if invalid. */
-    unsigned periods_used;  /**< Number of whole periods the estimate spans.    */
-    int valid;              /**< Non-zero if a frequency could be determined.   */
+    float frequency_hz;    /**< Estimated fundamental frequency, 0 if invalid. */
+    unsigned periods_used; /**< Number of whole periods the estimate spans.    */
+    int valid;             /**< Non-zero if a frequency could be determined.   */
 } freq_result_t;
 
 /**

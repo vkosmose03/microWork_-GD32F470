@@ -4,8 +4,10 @@
 
 #include <math.h>
 
-void setUp(void) {}
-void tearDown(void) {}
+void setUp(void) {
+}
+void tearDown(void) {
+}
 
 enum { N = 3840 };
 static float buf[N];
@@ -15,8 +17,8 @@ static void test_harmonic_extracts_fundamental(void) {
     const double fs = 19200.0;
     for (size_t i = 0u; i < (size_t) N; ++i) {
         const double t = (double) i / fs;
-        buf[i] = (float) (1.65 + 2.0 * sin(TEST_TWO_PI * 50.0 * t) +
-                          0.5 * sin(TEST_TWO_PI * 150.0 * t));
+        buf[i] =
+            (float) (1.65 + 2.0 * sin(TEST_TWO_PI * 50.0 * t) + 0.5 * sin(TEST_TWO_PI * 150.0 * t));
     }
     const harmonic_result_t r = calc_harmonic1(buf, N, 19200.0f, 50.0f);
     TEST_ASSERT_TRUE(r.valid);

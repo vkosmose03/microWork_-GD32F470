@@ -2,8 +2,10 @@
 #include "test_util.h"
 #include "unity.h"
 
-void setUp(void) {}
-void tearDown(void) {}
+void setUp(void) {
+}
+void tearDown(void) {
+}
 
 enum { N = 3840 };
 static float buf[N];

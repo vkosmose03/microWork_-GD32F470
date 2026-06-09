@@ -13,8 +13,8 @@
 #endif
 
 /** Fill @p buf with a pure sine: offset + amp*sin(2*pi*f*t + phase). */
-static inline void gen_sine(float *buf, size_t n, double fs, double freq, double amp,
-                            double offset, double phase) {
+static inline void gen_sine(float *buf, size_t n, double fs, double freq, double amp, double offset,
+                            double phase) {
     for (size_t i = 0u; i < n; ++i) {
         const double t = (double) i / fs;
         buf[i] = (float) (offset + amp * sin((TEST_TWO_PI * freq * t) + phase));
@@ -26,8 +26,8 @@ static inline void gen_sine(float *buf, size_t n, double fs, double freq, double
  *        from @p f0 to @p f1 over the whole buffer. dF/dt = (f1 - f0) / T.
  * @return The constant rate of frequency change (Hz/s).
  */
-static inline double gen_chirp(float *buf, size_t n, double fs, double f0, double f1,
-                               double amp, double offset) {
+static inline double gen_chirp(float *buf, size_t n, double fs, double f0, double f1, double amp,
+                               double offset) {
     const double duration = (double) n / fs;
     const double k = (f1 - f0) / duration; /* Hz per second */
     for (size_t i = 0u; i < n; ++i) {

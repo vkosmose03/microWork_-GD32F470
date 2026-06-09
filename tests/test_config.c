@@ -8,7 +8,8 @@ extern void fake_nvm_corrupt(uint32_t offset);
 void setUp(void) {
     (void) hal_nvm_erase();
 }
-void tearDown(void) {}
+void tearDown(void) {
+}
 
 static void test_defaults_are_valid(void) {
     config_params_t p;

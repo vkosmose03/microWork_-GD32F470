@@ -22,8 +22,8 @@ extern "C" {
 
 /** Hard limits derived from the task requirements. */
 #define CONFIG_MAX_SAMPLE_RATE_HZ 19200u /**< req #2: Fs <= 19200 Hz.        */
-#define CONFIG_MAX_FREQ_PERIODS   3u      /**< req #3.2: frequency over <= 3.  */
-#define CONFIG_MAX_DFDT_PERIODS   6u      /**< req #3.3: dF/dt over <= 6.      */
+#define CONFIG_MAX_FREQ_PERIODS   3u     /**< req #3.2: frequency over <= 3.  */
+#define CONFIG_MAX_DFDT_PERIODS   6u     /**< req #3.3: dF/dt over <= 6.      */
 #define CONFIG_MIN_DFDT_PERIODS   2u
 
 typedef struct {

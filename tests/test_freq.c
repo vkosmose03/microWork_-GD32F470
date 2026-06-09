@@ -2,8 +2,10 @@
 #include "test_util.h"
 #include "unity.h"
 
-void setUp(void) {}
-void tearDown(void) {}
+void setUp(void) {
+}
+void tearDown(void) {
+}
 
 enum { N = 3840 };
 static float buf[N];
@@ -16,9 +18,15 @@ static void check_frequency(double f) {
     TEST_ASSERT_FLOAT_WITHIN(0.15f, (float) f, r.frequency_hz);
 }
 
-static void test_freq_40hz(void) { check_frequency(40.0); }
-static void test_freq_50hz(void) { check_frequency(50.0); }
-static void test_freq_55hz(void) { check_frequency(55.0); }
+static void test_freq_40hz(void) {
+    check_frequency(40.0);
+}
+static void test_freq_50hz(void) {
+    check_frequency(50.0);
+}
+static void test_freq_55hz(void) {
+    check_frequency(55.0);
+}
 
 static void test_freq_caps_periods(void) {
     gen_sine(buf, N, 19200.0, 50.0, 2.0, 1.65, 0.0);

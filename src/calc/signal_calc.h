@@ -18,17 +18,17 @@ extern "C" {
 
 /** Tunable analysis parameters (mirrors the persisted configuration). */
 typedef struct {
-    float fs_hz;            /**< Sample rate of the block (Hz).               */
-    unsigned freq_periods;  /**< Periods for frequency estimation (<= 3).      */
-    unsigned dfdt_periods;  /**< Periods for dF/dt estimation (<= 6).          */
+    float fs_hz;           /**< Sample rate of the block (Hz).               */
+    unsigned freq_periods; /**< Periods for frequency estimation (<= 3).      */
+    unsigned dfdt_periods; /**< Periods for dF/dt estimation (<= 6).          */
 } signal_calc_params_t;
 
 /** Combined analysis result for one sample block. */
 typedef struct {
-    float rms;                  /**< AC RMS (СКЗ).                            */
-    float frequency_hz;         /**< Fundamental frequency.                   */
-    float dfdt_hz_per_s;        /**< Rate of frequency change.                */
-    float harmonic1_amplitude;  /**< Peak amplitude of the fundamental.       */
+    float rms;                 /**< AC RMS (СКЗ).                            */
+    float frequency_hz;        /**< Fundamental frequency.                   */
+    float dfdt_hz_per_s;       /**< Rate of frequency change.                */
+    float harmonic1_amplitude; /**< Peak amplitude of the fundamental.       */
 
     int rms_valid;
     int freq_valid;

@@ -21,8 +21,8 @@ extern "C" {
 
 /** ADC calibration: physical value = (count - offset_counts) * scale. */
 typedef struct {
-    float scale;          /**< Volts per ADC least-significant bit.     */
-    float offset_counts;  /**< ADC count corresponding to 0 V (DC bias). */
+    float scale;         /**< Volts per ADC least-significant bit.     */
+    float offset_counts; /**< ADC count corresponding to 0 V (DC bias). */
 } measure_calib_t;
 
 /** Convert a single raw ADC count to a calibrated value (volts). */

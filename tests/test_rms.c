@@ -2,8 +2,10 @@
 #include "test_util.h"
 #include "unity.h"
 
-void setUp(void) {}
-void tearDown(void) {}
+void setUp(void) {
+}
+void tearDown(void) {
+}
 
 /* 10 whole periods of 50 Hz at 19200 Hz = exactly 3840 samples. */
 enum { N = 3840 };

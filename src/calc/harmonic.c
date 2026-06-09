@@ -3,7 +3,7 @@
 
 #include <math.h>
 
-#define CALC_PI 3.14159265358979323846f
+#define CALC_PI    3.14159265358979323846f
 #define CALC_SQRT2 1.41421356237309504880f
 
 harmonic_result_t calc_harmonic1(const float *x, size_t n, float fs_hz, float f0_hz) {

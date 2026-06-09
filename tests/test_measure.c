@@ -1,8 +1,10 @@
 #include "measure/measure.h"
 #include "unity.h"
 
-void setUp(void) {}
-void tearDown(void) {}
+void setUp(void) {
+}
+void tearDown(void) {
+}
 
 static void test_sample_to_volts(void) {
     const measure_calib_t cal = {3.3f / 4095.0f, 2048.0f};

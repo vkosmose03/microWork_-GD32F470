@@ -119,8 +119,8 @@ void app_run(void) {
 
     const measure_calib_t calib = {cfg.adc_scale, cfg.adc_offset / cfg.adc_scale};
 
-    const hal_adc_config_t adc_cfg = {
-        cfg.sample_rate_hz, APP_BLOCK_SAMPLES, APP_ADC_CHANNEL, on_adc_block, NULL};
+    const hal_adc_config_t adc_cfg = {cfg.sample_rate_hz, APP_BLOCK_SAMPLES, APP_ADC_CHANNEL,
+                                      on_adc_block, NULL};
     if (hal_adc_init(&adc_cfg) != 0) {
         hal_uart_write_str("ADC init failed\r\n");
         for (;;) {
